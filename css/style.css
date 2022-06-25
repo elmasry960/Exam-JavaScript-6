@@ -1,0 +1,131 @@
+:root{
+  --bgColor: #000000;
+  --mainColor: #f8f6f6;
+  --hoverColor: #ff655c;
+}
+body{
+  background-color: #0d0d0d;
+}
+nav{
+  position: fixed;
+  display: flex;
+  z-index: 9999999999999;
+  top: 0;
+}
+.sidnav , .header-nav{
+  height: 100vh; 
+}
+.header-nav{
+  position: relative;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  background-color: var(--mainColor);
+}
+.btn-open-minu,.footer-nav{
+  position: absolute;
+}
+.logo {
+  margin-top: 1rem;
+}
+.btn-open-minu{
+  cursor: pointer;
+  top: 50%;
+  transform: translatey(-50%);
+}
+.footer-nav{
+  bottom: 1rem;
+}
+
+
+.sidnav{
+  position: absolute;
+  background-color: var(--bgColor);
+  width: 210px;
+  right: calc(100% + 24px - 25px);
+}
+.sidnav ul , .sidnav li {
+  list-style-type: none;
+}
+.nav-item li{
+  display: none;
+}
+.sidnav li {
+  padding-top: 1.5rem;
+}
+.sidnav span {
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 100;
+  color: var(--mainColor);
+  text-decoration: none;
+  transition: 0.3s all;
+  -webkit-transition: 0.3s all;
+  -moz-transition: 0.3s all;
+  -ms-transition: 0.3s all;
+  -o-transition: 0.3s all;
+}
+.sidnav span:hover{
+  color: var(--hoverColor);
+}
+
+.header-nav .item {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+}
+/* ////////////////////////////////////////// */
+.search input, #contacUs input {
+  color: white;
+  background-color: transparent;
+  border: unset;
+  border-bottom: 1px solid rgba(255, 255, 255, .7);
+  text-align: center;
+}
+.search input:focus{
+  color: white;
+  background-color: transparent;
+}
+footer input:focus{
+  color: white;
+  background-color: transparent;
+}
+/* ///////////////////////////////////////// */
+
+.contint .layer {
+  background-color: rgba(66, 66, 66, 0.7);
+  transform: translatey(100%);
+  transition: 0.9s all;
+  color: white !important;
+}
+.contint .poster:hover .layer{
+  top: 0 !important;
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+}
+.layer h2 {
+  font-weight: 200;
+}
+/* ************************************ */
+footer h2{
+  font-weight: 200;
+}
+#contacUs input {
+  font-size: 0.9rem;
+}
+.alert{
+  background-color: #f8d7da;
+  font-size: 0.9rem;
+  display: none;
+}
+#contacUs button{
+  width: fit-content;
+}
+.fa-star{
+  color: #f5c518;
+}

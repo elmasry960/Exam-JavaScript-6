@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/site.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Exam JavaScript</title>
+</head>
+<body>
+  <nav>
+    <div class="sidnav">
+      <div class="nav-item d-flex">
+        <ul class="ps-4">
+          <li>
+            <span id="now_playing">Now playing</span>
+          </li>
+          <li>
+            <span id="popular">Popular</span>
+          </li>
+          <li>
+            <span id="top_rated">Top Rated</span>
+          </li>
+          <li>
+            <span id="trending">Trending</span>
+          </li>
+          <li>
+            <span id="upcoming">Upcoming</span>
+          </li>
+          <li>
+            <span>Contact Us</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="header-nav text-center">
+      <div class="logo">
+        <img src="img/logo.png" class="w-50" alt="Logo Exam JavaScript">
+      </div>
+      <div class="btn-open-minu">
+        <i class="fa-solid fa-align-justify fs-4"></i>
+      </div>
+      <div class="footer-nav">
+        <i class="fas fa-globe w-100"></i>
+        <i class="fas fa-share-alt mt-3"></i>
+      </div>
+    </div>
+  
+  
+  </nav>
+
+  <section class="pt-5 search mt-2 pb-5">
+    <div class="container w-75">
+      <div class="row text-center">
+        <div class="col-sm-6">
+          <input id="valueSearchApi" type="text" placeholder="get movies by word..." class="form-control">
+        </div>
+        <div class="col-sm-6">
+          <input id="search" type="text" placeholder="search..." class="form-control">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="contint container w-75 py-5">
+      <div class="row gy-4" id="dispalyContent">
+        
+    </div>
+  </section>
+
+  <footer id="contacUs">
+
+    <div class="container text-white w-75 pb-5">
+      <h2 class="pb-3">ContacUs...</h2>
+      <div class="row">
+        <div class="col-sm-6 px-3 mb-3">
+          <input type="text" placeholder="Enter Name" class="form-control name">
+          <div class="alert alert-name p-2 text-black-50">Your Name is not valid</div>
+        </div>
+        <div class="col-sm-6 px-3 mb-3">
+          <input type="email" placeholder="Enter Email" class="form-control email">
+          <div class="alert alert-email p-2 text-black-50">Your Email is not valid</div>
+        </div>
+        <div class="col-sm-6 px-3 mb-3">
+          <input type="number" placeholder="Enter Phone" class="form-control phone">
+          <div class="alert alert-phone p-2 text-black-50">Your Phone is not valid</div>
+        </div>
+        <div class="col-sm-6 px-3 mb-3">
+          <input type="number" placeholder="Enter Age" class="form-control age">
+          <div class="alert alert-age p-2 text-black-50">Your Age is not valid</div>
+        </div>
+        <div class="col-sm-6 px-3 mb-3">
+          <input type="password" placeholder="Enter Password" class="form-control password">
+          <div class="alert alert-password p-2 text-black-50">entre valid password *Minimum eight characters, at least one letter and one number:*
+            Exampil: 12A6s+156E
+          </div>
+        </div>
+        <div class="col-sm-6 px-3 mb-3">
+          <input type="password" placeholder="Enter valid Repassword" class="form-control inputValidRepassword">
+          <div class="alert alert-RePassword p-2 text-black-50">entre valid Repassword</div>
+        </div>
+        <button class="btn btn-outline-danger mt-3 px-3" disabled>Submit</button>
+      </div>
+
+    </div>
+
+
+  
+  </footer>
+  
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
